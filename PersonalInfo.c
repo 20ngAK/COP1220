@@ -27,8 +27,8 @@ int main() {
 
   printf("%s", name);
   printf("%s", birth_date);
-  printf("%s", work_phone);
-  printf("%s", cell_phone);
+  printf("work %s", work_phone);
+  printf("cell %s", cell_phone);
 
   return 0;
 }
