@@ -13,12 +13,12 @@
 #include <string.h>
 
 int main() {
-  char input[10];
+  char userInput[10];
   int windSpeed; 
   printf("Enter the wind speed (e.g. 150 mph): ");
-  fgets(input, 10, stdin);
-// Read and format input variable into windSpeed variable to separate integer value from "mph"
-  sscanf(input, "%d", &windSpeed);
+  fgets(userInput, 10, stdin);
+// Read only the int value from userInput, for use in the calculations of hurricane category. 
+  sscanf(userInput, "%d", &windSpeed);
 
   if (windSpeed >= 157) {
     printf("Category Five Hurricane\n");
@@ -32,27 +32,7 @@ int main() {
     printf("Category One Hurricane\n");
   } else {
     printf("Not a Hurricane\n");
-  
+  }
   return 0;
 }
-
   
-
-   
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-}
