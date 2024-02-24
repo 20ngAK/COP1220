@@ -14,7 +14,6 @@
 
 int main() {
     int temperatures[5];    
-    int valid_temp = 1;
     int i;
     float sum = 0;
 
